@@ -1,0 +1,311 @@
+body{
+    min-height: 2000px;
+}
+/* :root{
+    --main-color: #212529;
+    --secondary-color: #fca311 ; 
+    --secondary-color: #ffc107 ; 
+    --terynary-color: #14213d ; 
+    --forth-color: antiquewhite ; 
+} */
+:root{
+    --main-color: cadetblue;
+    --secondary-color: #4f200c ; 
+    --trainary-color: antiquewhite ; 
+}
+header{
+    z-index: 20;
+}
+@media (min-width: 992px) {
+    header nav{
+        width: 80%;
+        margin: auto;
+    }
+}
+header .navbar-brand{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 4px;
+}
+header .nav-pills .nav-item a{
+    border: none;
+    color: #fff;
+}
+header .nav-pills{
+    background-color: var(--main-color) !important;
+}
+header .nav-pills .nav-item a:hover{
+    color: var(--trainary-color);
+    border: 1px solid var(--secondary-color);
+}
+header .nav-pills .nav-item a.active{
+    background-color: var(--secondary-color);
+    color: var(--trainary-color);
+}
+
+#home{
+    background-color: var(--trainary-color);
+    min-height: 100vh;
+}
+
+
+#home h2.hello{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+#home h2.title{
+    color: var(--main-color);
+    font-size: 4rem;
+    font-weight: 900;
+}
+@media (max-width: 340px) {
+    #home .welcome .intro{
+        margin: 1rem 0 !important;
+        padding: 0 !important;
+    }
+    #home h2.hello{
+        font-size: 2rem;
+    }
+    #home h2.title{
+        font-size: 3rem;
+    }
+}
+
+/* **************************************************************************************** */
+
+.text-container {
+    width: fit-content;
+    height: fit-content;
+  }
+  .content {
+    display: block;
+    position: sticky;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    color: var(--secondary-color);
+  }
+  
+  .content__container {
+    font-weight: 600;
+    overflow: hidden;
+    /* height: 40px; */
+    padding: 0 1.2rem;
+  }
+  .content__container__text {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  .content__container:before {
+    content: '[';
+    left: 0;
+  }
+  
+  .content__container:after {
+    content: ']';
+    position: absolute;
+    right: 0;
+  }
+  
+  .content__container:after, .content__container:before {
+    position: absolute;
+    top: -2px;
+    color: var(--main-color);
+    font-size: 42px;
+    line-height: 40px;
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  
+@media (max-width: 460px) {
+    .content__container__text {
+        white-space: wrap;
+        margin-left: 6px;
+    }
+
+    .content__container:after, .content__container:before {
+        font-size: 50px;
+        line-height: 75px;
+        font-weight: 520;
+    }
+    .content__container:after {
+        right: unset;
+        left: 16rem;
+    }
+}
+@media (max-width: 340px) {
+    .content__container__text {
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: .5rem;
+    }
+    .content__container:after, .content__container:before {
+        line-height: -10px;
+    }
+    .content__container:after {
+        right: unset;
+        left: 12rem;
+    }
+}
+
+#home .welcome .skills img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+
+
+#home .photo{
+    background-image: url(../img/test.png);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    box-shadow: 0 20px 5px 5px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    height: 600px;
+    width: 90%;
+    background-color: #4f200c13;
+    scale: .8;
+}
+#home .wrapper .spacer{
+   height: 5%;
+}
+
+
+
+@media (min-width: 992px) { 
+    #home .wrapper .photo{
+        background-image: url(../img/test.png);
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        box-shadow: 0 20px 5px 5px rgba(0, 0, 0, .2);
+        animation: animate 5s ease-in-out infinite;
+        transition: all 1s ease-in-out;
+        overflow: hidden;
+        width: auto;
+        scale: 1;
+    }
+    #home .wrapper .spacer{
+        height: 10%;
+     }
+}
+@media screen and (max-width: 767px) {
+    #home .wrapper .photo{
+        height: 350px;
+        scale: .7;
+    }
+    #home .wrapper .spacer{
+        height: 12%;
+     }
+}
+
+
+
+
+
+  @keyframes opacity {
+    0%, 100% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+ 
+
+
+@keyframes animate{
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+
+
+   /******************************************************** Start Project section ********************************************************/
+
+
+#projects *{
+    font-family: "Poppins", sans-serif;
+}
+
+#projects a{
+    text-decoration: none;
+}
+#projects ul{
+    list-style: none;
+}
+
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+#projects .projects-heading{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#projects .projects-heading h3{
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #222222;
+}
+#projects .projects-heading span{
+    color: #f33c3c;
+}
+#projects .projects-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(237, 237, 237, .6);
+    flex-wrap: wrap;
+    margin: 20px;
+}
+#projects .projects-filter li{
+    margin: 10px;
+    padding: 5px 20px;
+    color: #9b9b9b;
+    font-size: 1rem;
+    letter-spacing: .5px;
+    font-weight: 400px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#projects .projects-filter li.active{
+    background-color: #f0f0f0;
+    color: #272727;
+}
+
+
+    
+#projects .card{
+    /* padding: 15px;
+    border: 1px solid #eee; */
+    /* margin: 20px;  */
+}
+
