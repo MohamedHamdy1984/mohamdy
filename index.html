@@ -28,18 +28,14 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                             <li class="nav-item  mx-0">
-                                <a class="nav-link active px-3" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active px-3" aria-current="page" href="#home">Home</a>
                             </li>
-                            <li class="nav-item dropdown  mx-0">
-                                <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Portfolio
-                                </a>
-                                <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                            
+                            <li class="nav-item  mx-0">
+                                <a class="nav-link px-3" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item  mx-0">
+                                <a class="nav-link px-3" href="#projects">Projects</a>
                             </li>
                             <li class="nav-item  mx-0">
                                 <a class="nav-link px-3" href="#">About</a>
@@ -92,216 +88,306 @@
         
     </div>
 
-    
+<!-- 
+    Custom Shape Divider 
+    https://www.shapedivider.app/
+ -->
+ <div class="custom-shape-divider-bottom-1708362943">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+  </svg>
+</div>
 </section>
 
 
-<section id="projects" class="m-auto container">
-    <div class="projects-heading">
-        <span>Let's See My ss</span>
-        <h3>My Projects</h3>
+<section id="services">
+  <div class="section-heading">
+    <h6>Let's speak about:</h6>
+    <h3>My Services</h3>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="service-description col-lg-6">
+        <p class="mt-5 mb-5">
+          I am a passionate WordPress developer with a strong interest in creating custom themes, plugins, and front-end applications.<br>
+          My services includes:<br>
+        </p>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Custom theme development
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong> Ditch generic themes and have a website that reflects your individuality.</strong><br>I design and build bespoke WordPress themes tailored to your brand and vision.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Plugin development
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Unlock powerful functionality. </strong><br> I develop bespoke WordPress plugins tailored to your specific needs and extend your website's capabilities.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Front-end application development
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>I bring websites to life with dynamic front-end development. </strong><br> Using HTML, CSS, Bootstrap, JavaScript, and jQuery.<br> My Design adapts seamlessly to any device, from desktops to mobiles.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-image col-lg-6 d-none d-lg-block">
+        <img src="assets/img/services/services-section.jpg" alt="" class="img-fluid">
+      </div>
     </div>
+  </div>
+  <!-- 
+    Custom Shape Divider 
+    https://www.shapedivider.app/
+ -->
+  <div class="custom-shape-divider-bottom-1708362943">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+  </div>
+</section>
 
-    <ul class="projects-filter">
-        <li class="list active" data-filter="all">All</li>
-        <li class="list" data-filter="wp">WordPress</li>
-        <li class="list" data-filter="front">Front End</li>
-    </ul>
+<section id="projects" class="text-center">
+  <div class="section-heading">
+      <h6>Let's See My work</h6>
+      <h3>My Projects</h3>
+  </div>
 
+  <div class="projects-filter btn-group" role="group" aria-label="Basic radio toggle button group">
+    <input type="radio" class="btn-check" name="btnradio" id="all" autocomplete="off" checked>
+    <label class="btn btn-outline-secondary" for="all">All</label>
+  
+    <input type="radio" class="btn-check" name="btnradio" id="wp" autocomplete="off">
+    <label class="btn btn-outline-secondary" for="wp">WordPress</label>
+  
+    <input type="radio" class="btn-check" name="btnradio" id="front" autocomplete="off">
+    <label class="btn btn-outline-secondary" for="front">Front End</label>
+  </div>
+
+  <div class="container">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-        <div class="img-box wp ">
-            <div class="card col">
+        <div class="card-box wp " >
+            <div class="card col h-100 ">
                 <img src="assets/img/cards/card1.png" class="card-img-top" alt="Front">
-                <div class="card-body">
+                <div class="card-body d-flex justify-content-end flex-column">
                     <h5 class="card-title">MoHamdy Portfolio</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">WordPress Theme</h6>
                     <p class="card-text">A Simple WordPress Theme developed from scratch using Bootstrap and JQuery (Still in Progress).</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#card1Modal">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#card1Modal">
                         More Details
                     </button>
                 </div>
             </div>
         </div>
-        <div class="img-box wp ">
-            <div class="card col">
+        <div class="card-box wp ">
+            <div class="card col h-100 ">
                 <img src="assets/img/images/b-2.jpg" class="card-img-top" alt="Front">
-                <div class="card-body">
+                <div class="card-body d-flex justify-content-end flex-column">
                     <h5 class="card-title">Card title</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#card2Modal">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#card2Modal">
                         More Details
                     </button>
                 </div>
             </div>
         </div>
-        <div class="img-box front ">
-            <div class="card col">
+        <div class="card-box front ">
+            <div class="card col h-100 ">
                 <img src="assets/img/images/b-3.jpg" class="card-img-top" alt="Front">
-                <div class="card-body">
+                <div class="card-body d-flex justify-content-end flex-column">
                     <h5 class="card-title">Card title</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#card3Modal">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#card3Modal">
                         More Details
                     </button>
                 </div>
             </div>
         </div>
-        <div class="img-box front ">
-            <div class="card col">
+        <div class="card-box front ">
+            <div class="card col h-100 ">
                 <img src="assets/img/images/b-4.jpg" class="card-img-top" alt="Front">
-                <div class="card-body">
+                <div class="card-body d-flex justify-content-end flex-column">
                     <h5 class="card-title">Card title</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#card4Modal">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#card4Modal">
                         More Details
                     </button>
                 </div>
             </div>
         </div>
-        <div class="img-box front ">
-            <div class="card col">
+        <div class="card-box front ">
+            <div class="card col h-100 ">
                 <img src="assets/img/images/b-5.jpg" class="card-img-top" alt="Front">
-                <div class="card-body">
+                <div class="card-body d-flex justify-content-end flex-column">
                     <h5 class="card-title">Card title</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#card5Modal">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#card5Modal">
                         More Details
                     </button>
                 </div>
             </div>
         </div>
-        <div class="img-box front ">
-            <div class="card col">
+        <div class="card-box front ">
+            <div class="card col h-100 ">
                 <img src="assets/img/images/b-6.jpg" class="card-img-top" alt="Front">
-                <div class="card-body">
+                <div class="card-body d-flex justify-content-end flex-column">
                     <h5 class="card-title">Card title</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
                     <!-- Button trigger modal -->
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#card6Modal">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#card6Modal">
                         More Details
                     </button>
                 </div>
             </div>
         </div>
     </div>
+      
+    <!-- Modal 1 -->
+    <div class="modal fade" id="card1Modal" tabindex="-1" aria-labelledby="card1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="card1ModalLabel">MoHamdy Portfolio</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
 
+    <!-- Modal 2 -->
+    <div class="modal fade" id="card2Modal" tabindex="-1" aria-labelledby="card2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="card2ModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Modal 3 -->
+    <div class="modal fade" id="card3Modal" tabindex="-1" aria-labelledby="card3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="card3ModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Modal 4 -->
+    <div class="modal fade" id="card4Modal" tabindex="-1" aria-labelledby="card4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="card4ModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
 
-  
-<!-- Modal 1 -->
-<div class="modal fade" id="card1Modal" tabindex="-1" aria-labelledby="card1ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="card1ModalLabel">MoHamdy Portfolio</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal 5 -->
+    <div class="modal fade" id="card5Modal" tabindex="-1" aria-labelledby="card5ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="card5ModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
     </div>
-</div>
 
-<!-- Modal 2 -->
-<div class="modal fade" id="card2Modal" tabindex="-1" aria-labelledby="card2ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="card2ModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal 6 -->
+    <div class="modal fade" id="card6Modal" tabindex="-1" aria-labelledby="card6ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="card6ModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
     </div>
-</div>
-<!-- Modal 3 -->
-<div class="modal fade" id="card3Modal" tabindex="-1" aria-labelledby="card3ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="card3ModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-</div>
-<!-- Modal 4 -->
-<div class="modal fade" id="card4Modal" tabindex="-1" aria-labelledby="card4ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="card4ModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-</div>
+  </div>
 
-<!-- Modal 5 -->
-<div class="modal fade" id="card5Modal" tabindex="-1" aria-labelledby="card5ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="card5ModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-</div>
-
-<!-- Modal 6 -->
-<div class="modal fade" id="card6Modal" tabindex="-1" aria-labelledby="card6ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="card6ModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
+  <!-- 
+    Custom Shape Divider 
+    https://www.shapedivider.app/
+ -->
+ <div class="custom-shape-divider-bottom-1708362943">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+  </svg>
 </div>
 </section>
 
