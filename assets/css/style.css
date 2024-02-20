@@ -1,5 +1,6 @@
+/* General  */
 body{
-    min-height: 2000px;
+    font-family: "Poppins", sans-serif;
 }
 /* :root{
     --main-color: #212529;
@@ -13,6 +14,60 @@ body{
     --secondary-color: #4f200c ; 
     --trainary-color: antiquewhite ; 
 }
+.section-heading{
+    text-align: center;
+}
+.section-heading h3{
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #222222;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+}
+.section-heading h6{
+    color: var(--main-color);
+    transform: translateX(-12%);
+}
+
+
+/* 
+Custon Shape Divider 
+https://www.shapedivider.app/
+*/
+/* filling Color for each section in its part */
+
+.custom-shape-divider-bottom-1708362943 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1708362943 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 27px;
+    transform: rotateY(180deg);
+}
+
+
+
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1708107701 svg {
+        width: calc(100% + 1.3px);
+        height: 67px;
+    }
+}
+
+
+/********************************************** Start Heading **********************************************/
 header{
     z-index: 20;
 }
@@ -38,7 +93,7 @@ header .nav-pills{
 }
 header .nav-pills .nav-item a:hover{
     color: var(--trainary-color);
-    border: 1px solid var(--secondary-color);
+    /* border: 1px solid var(--secondary-color); */
 }
 header .nav-pills .nav-item a.active{
     background-color: var(--secondary-color);
@@ -48,6 +103,7 @@ header .nav-pills .nav-item a.active{
 #home{
     background-color: var(--trainary-color);
     min-height: 100vh;
+    position: relative;
 }
 
 
@@ -75,11 +131,11 @@ header .nav-pills .nav-item a.active{
 
 /* **************************************************************************************** */
 
-.text-container {
+#home .text-container {
     width: fit-content;
     height: fit-content;
   }
-  .content {
+  #home .content {
     display: block;
     position: sticky;
     overflow: hidden;
@@ -89,29 +145,29 @@ header .nav-pills .nav-item a.active{
     color: var(--secondary-color);
   }
   
-  .content__container {
+  #home .content__container {
     font-weight: 600;
     overflow: hidden;
     /* height: 40px; */
     padding: 0 1.2rem;
   }
-  .content__container__text {
+  #home .content__container__text {
     display: inline-block;
     white-space: nowrap;
   }
   
-  .content__container:before {
+  #home .content__container:before {
     content: '[';
     left: 0;
   }
   
-  .content__container:after {
+  #home .content__container:after {
     content: ']';
     position: absolute;
     right: 0;
   }
   
-  .content__container:after, .content__container:before {
+  #home .content__container:after, .content__container:before {
     position: absolute;
     top: -2px;
     color: var(--main-color);
@@ -212,7 +268,15 @@ header .nav-pills .nav-item a.active{
      }
 }
 
+/* 
+Custon Shape Divider color
+https://www.shapedivider.app/
+*/
 
+
+#home .custom-shape-divider-bottom-1708362943 .shape-fill {
+    fill: #fff;
+}
 
 
 
@@ -242,13 +306,50 @@ header .nav-pills .nav-item a.active{
 
 
 
+   /******************************************************** Start Services section ********************************************************/
+#services {
+position: relative;
+padding-bottom: 2rem;
+}
+#services .service-description>p {
+line-height: 1.7;
+font-size: 1.1rem;
+color: #545553;
+}
+#services .service-description .accordion{
+--bs-accordion-active-color: var(--main-color);
+--bs-accordion-btn-color: var(--main-color);
+--bs-accordion-btn-focus-box-shadow: var(--main-color);
+--bs-accordion-border-color: var(--main-color);
+--bs-accordion-active-bg: var(--trainary-color);
+}
+#services .service-description .accordion-body {
+font-size: 1.1rem;
+font-weight: 400;
+}
+
+/* 
+Custon Shape Divider color
+https://www.shapedivider.app/
+*/
+
+
+#services .custom-shape-divider-bottom-1708362943 .shape-fill {
+    fill: var(--trainary-color);
+}
+
+
    /******************************************************** Start Project section ********************************************************/
 
 
-#projects *{
+/* #projects *{
     font-family: "Poppins", sans-serif;
+} */
+#projects{
+    background-color: var(--trainary-color);
+    position: relative;
+    padding-bottom: 2rem;
 }
-
 #projects a{
     text-decoration: none;
 }
@@ -256,56 +357,33 @@ header .nav-pills .nav-item a.active{
     list-style: none;
 }
 
-#projects{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 50px 0;
-}
-#projects .projects-heading{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-}
-#projects .projects-heading h3{
-    font-size: 2.7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #222222;
-}
-#projects .projects-heading span{
-    color: #f33c3c;
-}
 #projects .projects-filter{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgba(237, 237, 237, .6);
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 20px auto;
+    width: 35%;
 }
-#projects .projects-filter li{
-    margin: 10px;
-    padding: 5px 20px;
-    color: #9b9b9b;
-    font-size: 1rem;
-    letter-spacing: .5px;
-    font-weight: 400px;
-    cursor: pointer;
-    user-select: none;
+#projects .projects-filter label{
+    border-radius: 0;
+    margin: 2px;
+    white-space:no-wrap;
 }
 
-#projects .projects-filter li.active{
-    background-color: #f0f0f0;
-    color: #272727;
-}
-
-
-    
+.hide {
+    opacity: 0;
+    height: 0;
+  }
 #projects .card{
-    /* padding: 15px;
-    border: 1px solid #eee; */
-    /* margin: 20px;  */
+    transition: all .3s;
+    padding: 5px;
+}
+#projects .card-box{
+    transition: opacity 0.3s linear, height 0.3s linear;
+}
+#projects .card:hover{
+    transform: scale(1.05);
 }
 
+#projects .custom-shape-divider-bottom-1708362943 .shape-fill {
+    fill: #fff;
+}
