@@ -73,7 +73,7 @@ header{
 }
 @media (min-width: 992px) {
     header nav{
-        width: 80%;
+        min-width: 80%;
         margin: auto;
     }
 }
@@ -387,3 +387,157 @@ https://www.shapedivider.app/
 #projects .custom-shape-divider-bottom-1708362943 .shape-fill {
     fill: #fff;
 }
+
+
+/* Start Testimonials */
+#testimonials {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    background-color: #fff;
+  }
+  #testimonials .container {
+
+  }
+  #testimonials .box {
+    padding: 20px;
+    background-color: var(--trainary-color);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
+    border-radius: 6px;
+    position: relative;
+  }
+  #testimonials .box img {
+    position: absolute;
+    right: -10px;
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+  }
+  #testimonials .box h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem !important;
+  }
+  #testimonials .box .title {
+    color: #777;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 700;
+  }
+  #testimonials .box .rate .filled {
+    color: #ffc107;
+  }
+  #testimonials .box p {
+    line-height: 1.5;
+    color: #777;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  /* End Testimonials */
+
+  
+
+/* Start Stats */
+#statistics {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    background-image: url("../img/stats.jpg");
+    background-size: cover;
+    min-height: 300px;
+  }
+#statistics h3{
+    position: relative;
+}
+  #statistics::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 255 255 / 95%);
+  }
+ 
+ 
+  #statistics .box {
+    background-color: white;
+    padding: 30px 15px;
+    text-align: center;
+    position: relative;
+    opacity: 0.9;
+    transition: .3s;
+    border: 1px solid #00000031;
+    border-radius: 4px;
+  }
+  #statistics .box::before,
+  #statistics .box::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: var(--main-color);
+    transition: 1s;
+    height: 0;
+  }
+  #statistics .box::before {
+    top: 0;
+    right: 0;
+  }
+  #statistics .box::after {
+    left: 0;
+    bottom: 0;
+  }
+  #statistics .box:hover {
+    opacity: 1;
+  }
+  #statistics .box:hover::before,
+  #statistics .box:hover::after {
+    height: 100%;
+  }
+  #statistics .box .number {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #statistics .box .text {
+    color: var(--main-color);
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  /* End Stats */
+  
+  
+  /********************************************** Start Footer **********************************************/
+footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+footer .logo{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+    border: 2px solid var(--main-color);
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+footer .social {
+    height: fit-content;
+}
+footer .social ul{
+    margin: 0;
+}
+footer .social ul li{
+    margin-left: 1.3rem;
+}
+footer .social a{
+    font-size: 23px;
+}
+/* footer .freepik a{
+    color: #fff;
+    text-decoration: none;
+} */
