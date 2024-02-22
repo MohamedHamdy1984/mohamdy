@@ -19,7 +19,24 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-
+sections.forEach(section => {
+    section.addEventListener('click', function(){
+        // links.forEach(link => {
+        //     link.classList.remove('active');
+        //     console.log(this);
+        // }) // end liks foreach
+        console.log('helloooooooooooooooooo')
+    }) // end section . addeventlistner
+}) // end sections.forEach
+for(let i=0; i<sections.length; i++){
+    sections[i].addEventListener('click', function(){
+        // links.forEach(link => {
+        //     link.classList.remove('active');
+        //     console.log(this);
+        // }) // end liks foreach
+        console.log('helloooooooooooooooooo')
+    }) // end section . addeventlistner
+}
 
 // function onScroll(event){
 //     var scrollPos = $(document).scrollTop();
