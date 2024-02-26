@@ -1,19 +1,17 @@
 /* General  */
-body{
-    font-family: "Poppins", sans-serif;
-}
-/* :root{
-    --main-color: #212529;
-    --secondary-color: #fca311 ; 
-    --secondary-color: #ffc107 ; 
-    --terynary-color: #14213d ; 
-    --forth-color: antiquewhite ; 
-} */
 :root{
     --main-color: cadetblue;
     --secondary-color: #4f200c ; 
     --trainary-color: antiquewhite ; 
 }
+
+body{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    overflow: hidden;
+}
+
+
 .section-heading{
     text-align: center;
 }
@@ -67,6 +65,74 @@ https://www.shapedivider.app/
 }
 
 
+/********************************************** Start Sidebar **********************************************/
+#sidebar {
+    width: fit-content;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100vh;
+    background-color: var(--main-color);
+    padding: .2rem;
+}
+@media (max-width: 340px) {
+    #sidebar{
+        display: none;
+    }
+}
+
+#sidebar ul.nav li a{
+    color: var(--trainary-color);
+    transition: all .1s ease-in-out;
+    border: 1px solid var(--main-color);
+    margin: 1rem 0;
+    padding: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+#sidebar ul.nav li a.active{
+    color: white;
+    background-color: var(--secondary-color);
+    
+}
+#sidebar ul.nav li a:hover{
+    color: white;
+    overflow: visible;
+    color: white;
+    background-color: var(--secondary-color);
+    border-top-right-radius:  0;
+    border-bottom-right-radius:  0;
+}
+#sidebar ul.nav li a .extend{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* left: 34; */
+    display: flex;
+    overflow: hidden;
+}
+#sidebar ul.nav li a .extend h5{
+    background-color: var(--secondary-color);
+    padding: 0 1rem;
+    border-radius: 5px;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform .5s ease;
+}
+#sidebar ul.nav li a:hover .extend h5{
+    transform: translateX(0);
+    border-top-left-radius:  0;
+    border-bottom-left-radius:  0;
+}
+
+/********************************************** main Content **********************************************/
+main{
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
 /********************************************** Start Heading **********************************************/
 header{
     z-index: 20;
@@ -93,7 +159,6 @@ header .nav-pills{
 }
 header .nav-pills .nav-item a:hover{
     color: var(--trainary-color);
-    /* border: 1px solid var(--secondary-color); */
 }
 header .nav-pills .nav-item a.active{
     background-color: var(--secondary-color);
@@ -148,7 +213,6 @@ header .nav-pills .nav-item a.active{
   #home .content__container {
     font-weight: 600;
     overflow: hidden;
-    /* height: 40px; */
     padding: 0 1.2rem;
   }
   #home .content__container__text {
@@ -183,31 +247,31 @@ header .nav-pills .nav-item a.active{
   
   
 @media (max-width: 460px) {
-    .content__container__text {
-        white-space: wrap;
+    #home .content__container__text {
+        white-space: wrap !important;
         margin-left: 6px;
     }
 
-    .content__container:after, .content__container:before {
+    #home .content__container:after, .content__container:before {
         font-size: 50px;
         line-height: 75px;
         font-weight: 520;
     }
-    .content__container:after {
+    #home .content__container:after {
         right: unset;
         left: 16rem;
     }
 }
 @media (max-width: 340px) {
-    .content__container__text {
+    #home .content__container__text {
         font-size: 25px;
         line-height: 30px;
         margin-top: .5rem;
     }
-    .content__container:after, .content__container:before {
+    #home .content__container:after, .content__container:before {
         line-height: -10px;
     }
-    .content__container:after {
+    #home .content__container:after {
         right: unset;
         left: 12rem;
     }
@@ -541,3 +605,6 @@ footer .social a{
     color: #fff;
     text-decoration: none;
 } */
+
+
+
