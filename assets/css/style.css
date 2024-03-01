@@ -11,6 +11,8 @@ body{
     --secondary-color: #4f200c; 
     --trainary-color: antiquewhite;
     --border-radius: 0.375rem;
+    --padding-top: 2rem;
+    --padding-bottom: 4rem;
 }
 .section-heading{
     text-align: center;
@@ -411,7 +413,8 @@ https://www.shapedivider.app/
 #projects{
     background-color: var(--trainary-color);
     position: relative;
-    padding-bottom: 2rem;
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
 }
 #projects a{
     text-decoration: none;
@@ -441,6 +444,10 @@ https://www.shapedivider.app/
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
     color: var(--trainary-color);
+}
+#projects .container{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .hide {
     opacity: 0;
